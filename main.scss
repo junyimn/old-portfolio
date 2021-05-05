@@ -3,3 +3,35 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+html {
+  /* To make use of full height of page*/
+  min-height: 100%;
+  margin: 0;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.lp-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lp-img {
+  height: 300px;
+  width: 500px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
