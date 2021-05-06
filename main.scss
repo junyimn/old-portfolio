@@ -4,34 +4,79 @@
   box-sizing: border-box;
 }
 
-html {
-  /* To make use of full height of page*/
-  min-height: 100%;
-  margin: 0;
-}
-body {
-  min-height: 100%;
-  margin: 0;
-}
-
-nav {
+.lp-nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 10px;
+  
+
+  
+  
+  // display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  // margin-top: 0;
+  // margin-right: 500px;
+  // margin-bottom: 0;
+  // margin-left: 500px;
+  // padding: 10px;
+
+  &__about,
+  &__projects,
+  &__contact {
+    
+    align-self: center;
+    justify-self: center;
+    padding: 0;
+  }
+  
+  
 }
 
 .lp-mid {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.lp-img {
-  height: 300px;
-  width: 500px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 5%;
+  border: 10px solid blanchedalmond;
+  height: 50vh;
+  padding: 0;
   
-}
+ 
+
+
+
+  &__img {
+    height: 300px;
+    width: 500px;
+    border-radius: 8px;
+    
+    
+    }
+  
+  &__mic {
+    position: relative;
+    right: 670px;
+    font-size: 100px;
+    }
+
+    &__hael {
+      position: relative;
+      right: 650px;
+      font-size: 100px;
+      color: white;
+    }
+
+    // // &__ngu {
+    // //   position: relative;
+    // //   right: 350px;
+    // //   font-size: 100px;
+    // //   color: white;
+    // }
+  }
+
+  .hello {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-start: 2;
+  }
