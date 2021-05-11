@@ -31,6 +31,259 @@
   padding: 60px;
 }
 
+.pp-body {
+  height: 100vh;
+}
+
+.pp-projects {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.pp-projects__left {
+  margin-left: 150px;
+  font-size: 150%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.pp-projects__title {
+  display: flex;
+  justify-content: center;
+}
+.pp-projects__mainpic {
+  width: 800px;
+  height: 500px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.pp-left {
+  float: left;
+  width: 70%;
+}
+.pp-left__leftImg {
+  float: left;
+  width: 700px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.projectxt {
+  float: left;
+  width: 150px;
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 400px;
+}
+
+.rightside {
+  float: left;
+  width: 25%;
+}
+
+.smallimg {
+  height: 80px;
+  float: left;
+  margin-right: 48px;
+}
+
+.thumbnaildiv {
+  margin-top: 50px;
+  float: left;
+  clear: both;
+  margin-left: 50px;
+}
+
+.bigimg {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 40px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .rightside {
+    float: left;
+    width: 25%;
+    clear: both;
+  }
+
+  .thumbnaildiv {
+    margin-left: 0px;
+    float: none;
+    display: block;
+    margin: auto;
+    margin: 50px;
+  }
+
+  .smallimg {
+    width: 100px;
+    float: left;
+    margin-right: 48px;
+    margin: 20px;
+  }
+
+  .rightside {
+    width: 100%;
+  }
+
+  .bigimg {
+    width: 90%;
+  }
+
+  .pp-left {
+    width: 100%;
+  }
+
+  .projectxt {
+    width: 500px;
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    float: none;
+    margin-top: 50px;
+  }
+
+  .thumbnaildiv {
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+  }
+
+  .projectimg {
+    display: block;
+    margin: auto;
+    float: none;
+  }
+}
+@media only screen and (max-width: 615px) {
+  .projectimg {
+    width: 100%;
+  }
+
+  .projectxt {
+    width: 90% !important;
+    margin: 5%;
+  }
+
+  .smallimg {
+    margin: 5px;
+  }
+
+  .thumbnaildiv {
+    width: 300px;
+  }
+
+  .bigimg {
+    width: 100%;
+    margin: 0px;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 1714px) {
+  .projectxt {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .projectxt {
+    width: 500px;
+  }
+}
+.contacttitle {
+  text-align: center;
+  margin: 50px;
+  font-size: 70px;
+}
+
+.contacttxt {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.icon {
+  width: 300px;
+  margin: 12px;
+}
+
+.icondiv {
+  width: 1000px;
+  margin: auto;
+}
+
+.bigicon {
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 200px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  border-radius: 5%;
+}
+
+@media only screen and (max-width: 980px) {
+  .icondiv {
+    width: 530px;
+  }
+
+  .icon {
+    width: 150px;
+    margin: 12px;
+  }
+
+  .contacttxt {
+    font-size: 0.5em;
+  }
+}
+@media only screen and (max-width: 531px) {
+  .icondiv {
+    width: 100%;
+  }
+
+  .icon {
+    width: 90%;
+    margin: 5%;
+  }
+}
+@media (max-width: 890px) {
+  .lp-mid__name {
+    display: block !important;
+    margin: auto;
+    clear: both;
+    position: unset !important;
+    position: inherit !important;
+    text-align: center;
+    font-size: 40px !important;
+    margin-top: 25px;
+  }
+
+  .lp-mid__accent {
+    color: black !important;
+    margin: 0px !important;
+  }
+
+  .lp-mid {
+    display: block;
+  }
+
+  .lp-mid__pic {
+    display: block;
+    margin: auto;
+    width: 90% !important;
+  }
+
+  .lp-bot {
+    padding: 20px;
+  }
+}
 .lp-hello {
   position: relative;
   display: flex;
@@ -98,7 +351,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 30px;
-  margin-left: 250px;
+  margin-left: 10%;
 }
 .am-main .devicon-javascript-plain, .am-main .devicon-html5-plain, .am-main .devicon-css3-plain, .am-main .devicon-sass-original, .am-main .devicon-bootstrap-plain, .am-main .devicon-git-plain {
   height: 100px;
