@@ -1,0 +1,103 @@
+@use "./base" as *;
+
+.lp-hello {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10%;
+
+  &__about,
+  &__projects,
+  &__contact {
+    align-self: center;
+    justify-self: center;
+    padding: 0;
+  }
+
+  &__text {
+    font-size: 40px;
+  }
+}
+
+.lp-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+
+  &__about,
+  &__projects,
+  &__contact {
+    
+    align-self: center;
+    justify-self: center;
+    padding: 0;
+  }
+}
+
+.lp-mid {
+  
+  &__pic {
+    width: 500px;
+    border-radius: 20px;
+  }
+  
+  &__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    font-size: 120px;
+  }
+  
+  &__accent {
+    color: white;
+    margin: 0 25px;
+  }
+  
+}
+
+.am-main { 
+ 
+  &__subtitle {
+    font-size: 200%;
+    margin-left: 150px;
+    margin-top: 100px;
+    width: auto;
+  
+  }
+
+  &__info {
+    margin-left: 150px;
+   font-size: 150%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__pics {
+  
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    margin-left: 250px;
+  }
+
+   .devicon-javascript-plain , .devicon-html5-plain , .devicon-css3-plain , .devicon-sass-original, .devicon-bootstrap-plain , .devicon-git-plain {
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px; 
+    font-size: 80px;
+  }
+}
+
