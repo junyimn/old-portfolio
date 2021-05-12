@@ -1,6 +1,5 @@
 @use "./base" as *;
 
-
 .lp-mid {
   position: relative;
   display: flex;
@@ -14,7 +13,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  
+
   &__container {
     display: flex;
     flex-direction: row;
@@ -43,10 +42,10 @@
   &__left {
     margin-left: 150px;
     font-size: 150%;
-     width: 50%;
-     display: flex;
-     flex-direction: column;
-     height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
   }
 
   &__title {
@@ -62,7 +61,6 @@
   }
 }
 
-
 // .pp-container {
 //   display: grid;
 //   grid-template-columns: 1fr 1fr 1fr;
@@ -76,16 +74,15 @@
 //   background-color: burlywood;
 // }
 
-// .pp-container__title { 
-//   grid-area: pp-container__title; 
+// .pp-container__title {
+//   grid-area: pp-container__title;
 //   border: red solid 5px;
 // }
 
-// .pp-container__mainpic { 
-//   grid-area: pp-container__mainpic; 
+// .pp-container__mainpic {
+//   grid-area: pp-container__mainpic;
 //   border: solid 5px blue;
 
-  
 // }
 
 // .pp-container__mainPicImg {
@@ -93,8 +90,8 @@
 //   width: 100%;
 // }
 
-// .pp-container__thumbnails { 
-//   grid-area: pp-container__thumbnails; 
+// .pp-container__thumbnails {
+//   grid-area: pp-container__thumbnails;
 //   border: blueviolet solid 5px;
 // }
 
@@ -113,43 +110,41 @@
 .pp-left {
   float: left;
   width: 70%;
-  
-  &__leftImg{
+
+  &__leftImg {
     float: left;
     width: 700px;
     margin-left: 50px;
     margin-top: 50px;
   }
+
+  &__projectxt {
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 400px !important;
+  }
+
+  &__thumbnaildiv {
+    margin-top: 50px;
+    float: left;
+    clear: both;
+    margin-left: 50px;
+  }
 }
 
-
-.projectxt{
-  float: left;
-  width: 150px;
-  margin-top: 50px;
-  margin-left: 50px;
-  width: 400px;
-}
-
-.rightside{
+.rightside {
   float: left;
   width: 25%;
 }
 
-.smallimg{
+.smallimg {
   height: 80px;
   float: left;
   margin-right: 48px;
 }
 
-.thumbnaildiv{
-  margin-top: 50px;
-  float: left;
-  clear: both;
-  margin-left: 50px;
-}
-
-.bigimg{
+.bigimg {
   float: left;
   clear: both;
   width: 100%;
@@ -158,16 +153,23 @@
 }
 
 @media only screen and (max-width: 1080px) {
-
-  .rightside {
-  
-      float: left;
-      width: 25%;
-      clear: both;
-  
+  .pp-left__leftImg {
+    float: left;
+    width: 750px;
+    margin-left: 150px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    width: 90%;
+    margin: 5%;
   }
 
-  .thumbnaildiv{
+  .rightside {
+    float: left;
+    width: 25%;
+    clear: both;
+  }
+
+  .thumbnaildiv {
     margin-left: 0px;
     float: none;
     display: block;
@@ -175,26 +177,26 @@
     margin: 50px;
   }
 
-  .smallimg{
+  .smallimg {
     width: 100px;
     float: left;
     margin-right: 48px;
     margin: 20px;
   }
-  
-  .rightside{
+
+  .rightside {
     width: 100%;
   }
 
-  .bigimg{
+  .bigimg {
     width: 90%;
   }
 
-  .pp-left{
+  .pp-left {
     width: 100%;
   }
 
-  .projectxt{
+  .projectxt {
     width: 500px;
     display: block;
     margin: auto;
@@ -203,85 +205,91 @@
     margin-top: 50px;
   }
 
-  .thumbnaildiv{
+  .thumbnaildiv {
     width: 600px;
     padding: 20px;
     margin: auto;
   }
 
-  .projectimg{
+  .projectimg {
     display: block;
     margin: auto;
     float: none;
   }
-
 }
 
 @media only screen and (max-width: 615px) {
-  .projectimg{
+  .projectimg {
     width: 100%;
   }
 
-  .projectxt{
+  .projectxt {
     width: 90% !important;
     margin: 5%;
   }
 
-  .smallimg{
+  .smallimg {
     margin: 5px;
   }
 
-  .thumbnaildiv{
+  .thumbnaildiv {
     width: 300px;
   }
 
-  .bigimg{
+  .bigimg {
     width: 100%;
     margin: 0px;
     margin-top: 50px;
   }
+
+  .pp-left__leftImg {
+    float: left;
+    width: 750px;
+    margin-left: 90px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 90% !important;
+    margin: 5% !important;
+  }
 }
 
-
 @media only screen and (max-width: 1714px) {
-
-  .projectxt{
+  .projectxt {
     width: 700px;
   }
 }
 
 @media only screen and (max-width: 1080px) {
-
-  .projectxt{
+  .projectxt {
     width: 500px;
   }
 }
 
 // contacts
 
-.contacttitle{
+.contacttitle {
   text-align: center;
   margin: 50px;
   font-size: 70px;
 }
 
-.contacttxt{
+.contacttxt {
   text-align: center;
   font-size: 40px;
   margin-bottom: 50px;
 }
 
-.icon{
+.icon {
   width: 300px;
   margin: 12px;
 }
 
-.icondiv{
+.icondiv {
   width: 1000px;
   margin: auto;
 }
 
-.bigicon{
+.bigicon {
   width: 80%;
   display: block;
   margin: auto;
@@ -294,24 +302,29 @@
 }
 
 @media only screen and (max-width: 980px) {
-
-  .icondiv{
+  .icondiv {
     width: 530px;
   }
 
-  .icon{
+  .icon {
     width: 150px;
     margin: 12px;
   }
 
-  .contacttxt{
+  .contacttxt {
     font-size: 0.5em;
   }
 
+  .pp-left__leftImg {
+    float: left;
+    // width: 750px;
+    // margin-left: 90px;
+    margin-top: 50px;
+    // margin-bottom: 10px
+  }
 }
 
 @media only screen and (max-width: 531px) {
-
   .icondiv {
     width: 100%;
   }
@@ -319,12 +332,19 @@
   .icon {
     width: 90%;
     margin: 5%;
+  }
+
+  .pp-left__leftImg {
+    float: left;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
 }
 
-}
-
-@media  (max-width: 890px) {
-  .lp-mid__name{
+@media (max-width: 890px) {
+  .lp-mid__name {
     display: block !important;
     margin: auto;
     clear: both;
@@ -335,7 +355,7 @@
     margin-top: 25px;
   }
 
-  .lp-mid__accent{
+  .lp-mid__accent {
     color: black !important;
     margin: 0px !important;
   }
@@ -344,7 +364,7 @@
     display: block;
   }
 
-  .lp-mid__pic{
+  .lp-mid__pic {
     display: block;
     margin: auto;
     width: 90% !important;
@@ -352,6 +372,5 @@
 
   .lp-bot {
     padding: 20px;
+  }
 }
-}
-

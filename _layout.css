@@ -71,13 +71,17 @@
   margin-left: 50px;
   margin-top: 50px;
 }
-
-.projectxt {
+.pp-left__projectxt {
   float: left;
-  width: 150px;
   margin-top: 50px;
   margin-left: 50px;
-  width: 400px;
+  width: 400px !important;
+}
+.pp-left__thumbnaildiv {
+  margin-top: 50px;
+  float: left;
+  clear: both;
+  margin-left: 50px;
 }
 
 .rightside {
@@ -91,13 +95,6 @@
   margin-right: 48px;
 }
 
-.thumbnaildiv {
-  margin-top: 50px;
-  float: left;
-  clear: both;
-  margin-left: 50px;
-}
-
 .bigimg {
   float: left;
   clear: both;
@@ -107,6 +104,16 @@
 }
 
 @media only screen and (max-width: 1080px) {
+  .pp-left__leftImg {
+    float: left;
+    width: 750px;
+    margin-left: 150px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    width: 90%;
+    margin: 5%;
+  }
+
   .rightside {
     float: left;
     width: 25%;
@@ -184,6 +191,16 @@
     margin: 0px;
     margin-top: 50px;
   }
+
+  .pp-left__leftImg {
+    float: left;
+    width: 750px;
+    margin-left: 90px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 90% !important;
+    margin: 5% !important;
+  }
 }
 @media only screen and (max-width: 1714px) {
   .projectxt {
@@ -242,6 +259,11 @@
   .contacttxt {
     font-size: 0.5em;
   }
+
+  .pp-left__leftImg {
+    float: left;
+    margin-top: 50px;
+  }
 }
 @media only screen and (max-width: 531px) {
   .icondiv {
@@ -251,6 +273,14 @@
   .icon {
     width: 90%;
     margin: 5%;
+  }
+
+  .pp-left__leftImg {
+    float: left;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 890px) {
